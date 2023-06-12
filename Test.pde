@@ -3,19 +3,17 @@ void setup() {
 }
 
 void test() {
-  // Constructeur et accesseurs
   GrandNaturel n1 = new GrandNaturel(102);
   GrandNaturel n2 = new GrandNaturel(1999);
   assert n1.nbChiffres() == 3;
   assert n1.chiffre(0) == 2;
   assert n1.chiffre(1) == 0;
   assert n1.chiffre(2) == 1;
+  
   // si la position n'est pas valide, le chiffre est considéré comme zéro
   assert n1.chiffre(3) == 0;
   assert n1.chiffre(-1) == 0;
   println("constructeur et accesseurs ok");
-
-  // À compléter avec des tests pour les autres méthodes
 
   GrandNaturel c = new  GrandNaturel(n1);
   assert c.toString().equals("102");
