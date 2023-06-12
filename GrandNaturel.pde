@@ -1,17 +1,13 @@
 class GrandNaturel {
   int[] chiffres; // chifres décimaux du moins au plus significatif
 
-  // Crée un grand naturel égal à c
   GrandNaturel(int c) {
-    // on s'assure que c est positif
   assert c > 0 : 
     "on ne représente que les nombres positifs";
-    // on commence par calculer le nombre de chiffres
     int nbChiffres = 0;
     for (int c1 = c; c1 > 0; c1 /= 10) {
       nbChiffres++;
     }
-    // on crée un tableau de la taille nécessaire
     chiffres = new int[nbChiffres];
     // et on le rmplit
     for (int i = 0; i < nbChiffres; i++) {
@@ -38,17 +34,6 @@ class GrandNaturel {
     }
     return chiffres[k];
   }
-
-
-  String toString() {
-    String t = "";
-
-    for (int i = chiffres.length - 1; i>=0; i--) {
-      t+=""+chiffres[i];
-    }
-    return t;
-  }
-
 
   boolean egal(GrandNaturel n) {
     boolean egal = true;
@@ -177,6 +162,15 @@ class GrandNaturel {
     }
     resultat.normaliser();
     return resultat;
+  }
+  
+  String toString() {
+    String t = "";
+
+    for (int i = chiffres.length - 1; i>=0; i--) {
+      t+=""+chiffres[i];
+    }
+    return t;
   }
 
 }
