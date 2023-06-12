@@ -15,8 +15,7 @@ class GrandNaturel {
       c /= 10;
     }
   }
-
-
+  
   GrandNaturel(GrandNaturel n) {
     chiffres = n.chiffres;
     for (int i = 0; i < chiffres.length; i++) {
@@ -106,7 +105,6 @@ class GrandNaturel {
       retenue = chiffres[i] / 10;
       chiffres[i] %= 10;
     }
-    // s'il restre quelque chose à la fin, on l'ajoute
     if (retenue > 0) {
       GrandNaturel r = new GrandNaturel(retenue);
       chiffres = concat(chiffres, r.chiffres);
