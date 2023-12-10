@@ -44,5 +44,3 @@ Les tests incluent des assertions pour vérifier les résultats. En cas de succ�
 ## Méthode Fibonacci
 
 Le projet comprend également une méthode `fibo` qui calcule le n-ième nombre de Fibonacci en utilisant la classe `GrandNaturel`. La méthode fibo utilise une approche récursive pour calculer le nombre de Fibonacci.
-
-N'hésitez pas à explorer le code source pour en savoir plus ...
